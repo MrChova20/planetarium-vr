@@ -11,6 +11,8 @@ public class IntructionBtnAction : MonoBehaviour
     public Sprite imageHover;
     public Sprite imageDefault;
     public Button button;
+    public GameObject pablo;
+
 
     public void OnPointerEnter() {
         button.GetComponent<Image>().sprite = imageHover;
@@ -26,6 +28,6 @@ public class IntructionBtnAction : MonoBehaviour
     }
 
     public void showInstructionPage(){
-        Debug.Log("Mostrar instrucciones");
+            pablo.SetActive(true);
     }
 }
